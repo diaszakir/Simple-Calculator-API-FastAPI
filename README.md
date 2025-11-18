@@ -1,1 +1,15 @@
-# Simple-Calculator-API-FastAPI
+# Simple Calculator
+
+## Python, FastAPI
+
+Installation
+
+```bash
+pip install fastapi "uvicorn[standard]"
+```
+
+To launch project
+
+```bash
+uvicorn main:app --reload
+```
