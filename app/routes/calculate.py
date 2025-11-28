@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Query, Request
+from fastapi import APIRouter, Request
 from fastapi.templating import Jinja2Templates
 from starlette import status
 
@@ -19,3 +19,7 @@ async def add(a: int, b: int):
 @router.post('/sub/', status_code=status.HTTP_200_OK)
 async def sub(a: int, b: int):
     return {'result': a - b}
+
+@router.post('/multiply', status_code=status.HTTP_200_OK)
+async def multiply(a: int, b: int):
+    return {'result': a * b}
