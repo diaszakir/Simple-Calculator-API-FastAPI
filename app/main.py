@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-from fastapi.templating import Jinja2Templates
 from starlette import status
 from app.routes import calculate
 
