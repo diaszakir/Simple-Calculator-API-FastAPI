@@ -5,6 +5,35 @@
     <title>Calculator FastAPI</title>
 </head>
 <body>
-    <h1>Welcome!</h1>
+    <h1>Calculator FastAPI</h1>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">Please enter two numbers</div>
+            <div class="card-body">
+                <form class="">
+                    <div class="form-group">
+                        <label for="numberA">Enter first number</label>
+                        <input id="numberA" type="number" class="number-form" name="a" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="numberB">Enter second number number</label>
+                        <input id="numberB" type="number" class="number-form" name="b" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="selectItem">Enter type</label>
+                        <select id="selectItem">
+                            <option>+</option>
+                            <option>-</option>
+                            <option>*</option>
+                            <option>/</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="button">Calculate</button>
+                </form>
+            </div>
+            <div class="result">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
