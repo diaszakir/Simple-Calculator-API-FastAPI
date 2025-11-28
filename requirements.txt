@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+pytest
+starlette
+httpx
+jinja2
+aiofiles
