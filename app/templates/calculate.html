@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator FastAPI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
 </head>
 <body>
-    <h1>Calculator FastAPI</h1>
     <div class="container">
+        <h1>Calculator FastAPI</h1>
+        <p>Simple Calculator created on FastAPI</p>
         <div class="card">
             <div class="card-header">Please enter two numbers</div>
             <div class="card-body">
-                <form class="">
+                <form class="form-calculate">
                     <div class="form-group">
                         <label for="numberA">Enter first number</label>
                         <input id="numberA" type="number" class="number-form" name="a" required/>
                     </div>
                     <div class="form-group">
-                        <label for="numberB">Enter second number number</label>
+                        <label for="numberB">Enter second number</label>
                         <input id="numberB" type="number" class="number-form" name="b" required/>
                     </div>
                     <div class="form-group">
