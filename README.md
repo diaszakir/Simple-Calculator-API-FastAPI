@@ -11,5 +11,5 @@ pip install fastapi "uvicorn[standard]"
 To launch project
 
 ```bash
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
